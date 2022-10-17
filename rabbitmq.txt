@@ -1,0 +1,16 @@
+rabbitmq-server     to start the server
+
+
+http://localhost:15672    guest is the username and password
+
+
+To start it in the background you use 
+
+brew services start rabbitmq
+
+brew services stop rabbitmq
+
+
+to start celery
+
+celery -A celeryrmq worker -l INFO
